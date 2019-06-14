@@ -29,14 +29,14 @@ selectSwitchAccountsOption(value) {
     cy.contains('Switch Accounts').click();
     cy.contains(value).click();
 
-    Return this;
+    return this;
     }
 
 selectUserDropdownOptionByUsername(option, userName){
     cy.contains(userName).click();
     cy.contains(option).click();
 
-    Return this;
+    return this;
     }
 
 
