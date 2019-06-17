@@ -1,4 +1,4 @@
-require('dotenv').config();
+
 //Set prBranch for URLs if needed.
 //If the PR required api changes, then the web app will point to a special api branch.
 //Otherwise, it points to the normal staging api url.
@@ -30,9 +30,12 @@ const Params  = {
         leaseStartDate: '',
         leaseEndDate: '',
         propertyId: '',
-        thpAdmin: 'thregression' + '.' + process.env.MAILOSAUR_SERVER_ID + '@mailosaur.io',
-        thpPassword: process.env.THP_PASSWORD,
-        emailDomain: '.' + process.env.MAILOSAUR_SERVER_ID + '@mailosaur.io',
+        //thpAdmin: 'thregression' + '.' + process.env.MAILOSAUR_SERVER_ID + '@mailosaur.io',
+        thpAdmin: 'thregression' + '.' + 'htcoikvm' + '@mailosaur.io',
+        //thpPassword: process.env.THP_PASSWORD,
+        thpPassword: 'Testing123!',
+        //emailDomain: '.' + process.env.MAILOSAUR_SERVER_ID + '@mailosaur.io',
+        emailDomain: '.' + 'htcoikvm' + '@mailosaur.io',
         clientName: '',
         isLeadUpgrade: false
     },

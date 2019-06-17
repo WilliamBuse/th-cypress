@@ -1,4 +1,3 @@
-﻿require('dotenv').config();
 /* WEBSITE CONSTANTS */
 var URLs = {
     prodURL: 'https://www.travelershaven.com/',
@@ -854,11 +853,14 @@ var UserMenu = {
 };
 
 var Emails = {
-    domainMailosaur: '.' + process.env.MAILOSAUR_SERVER_ID +'@mailosaur.io',
+    //domainMailosaur: '.' + process.env.MAILOSAUR_SERVER_ID +'@mailosaur.io',
+    domainMailosaur: '.' + 'htcoikvm' +'@mailosaur.io',
     domainMailinator: '@mailinator.com',
     domainYopmail: '@yopmail.com',
-    apiKeyMailosaur: process.env.MAILOSAUR_KEY,
-    serverIdMailosaur: process.env.MAILOSAUR_SERVER_ID,
+    //apiKeyMailosaur: process.env.MAILOSAUR_KEY,
+    apiKeyMailosaur: '8shDKVffuxIcAoN',
+    //serverIdMailosaur: process.env.MAILOSAUR_SERVER_ID,
+    serverIdMailosaur: 'htcoikvm',
     inviteStipendTravelerSubject: "You’ve Been Invited!",  //NOTE: The apostrophe in this is not a single quote!
     signupConfirmation: 'Thank You for Signing up!',
     inviteVendorSubject: 'Reach 20k+ tenants with Travelers Haven',

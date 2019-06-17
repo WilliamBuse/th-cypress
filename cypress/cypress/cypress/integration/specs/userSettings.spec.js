@@ -19,7 +19,7 @@
 describe('Sign In', () => {
   it('should sign in with correct credentials', () => {
     const main = new MainPage();
-    launchPage(url)
+    main.launchPage(url)
 
 
 
