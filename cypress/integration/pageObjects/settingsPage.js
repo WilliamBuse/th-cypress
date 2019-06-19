@@ -1,16 +1,16 @@
 class settingsPage  {
 
 fillPassword(value) {
-    const field = cy.get(`[name=currentPassword]`);
-    field.clear();
-    field.type(value);
+    cy.get(`[name=currentPassword]`);
+    //field.clear();
+    field.type(value,{ force: true })
     
     return this;
   }
 
 fillNewPassword(value) {
     const field = cy.get(`[name=password]`);
-    field.clear();
+    //field.clear();
     field.type(value);
     
     return this;

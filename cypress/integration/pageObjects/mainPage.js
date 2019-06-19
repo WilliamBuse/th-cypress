@@ -1,3 +1,5 @@
+import settingsPage from './settingsPage';
+
 class mainPage {
 
 launchPage(url){
@@ -31,10 +33,11 @@ selectSwitchAccountsOption(value) {
     }
 
 selectUserDropdownOptionByUsername(option, userName){
-    cy.contains(userName).click();
-    cy.contains(option).click();
+    cy.contains(userName).click({ force: true });
+    cy.contains(option).click({ force: true });
 
-    return this;
+    const settings = new settingsPage();
+    return settings;
     }
 
 

@@ -1,4 +1,8 @@
 {
-"integrationFolder": ".",
-  "testFiles": "**.spec.js"
+"integrationFolder": "/Users/williambuse/Documents/GitHub/th-cypress/cypress/integration/specs",
+"requestTimeout": 90000,
+"responseTimeout": 90000,
+"taskTimeout": 90000,
+"defaultCommandTimeout": 9000,
+"execTimeout": 90000
 }

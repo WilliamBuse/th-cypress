@@ -30,13 +30,20 @@ describe('Sign In', () => {
     main.doLogin(user, password);
   });
 
-  it('should switch accounts and Select User Settings', () => {
+  it('should switch accounts ', () => {
     const main = new mainPage();
     main.selectSwitchAccountsOption('TravelMax');
 
-    main.selectUserDropdownOptionByUsername('User Settings', userName)
+    //const settings = main.selectUserDropdownOptionByUsername('User Settings', userName);
+
+
+  //});
+
+  //it('should return an error with new passwords not matching', () => {
+    //const settings = new settingsPage();
+
+    //settings.fillPassword(password);
 
 
   });
-
 });
